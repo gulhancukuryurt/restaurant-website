@@ -1,0 +1,88 @@
+.home {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.headerContainer {
+    background-color: #9fc5dd;
+    width: 500px;
+    height: auto;
+    padding: 20px;
+    margin-top: 80px;
+    margin-left: 50px;
+    text-align: center;
+    border-radius: 20px;
+    
+}
+
+.headerContainer h1 {
+    color: white;
+    margin-bottom: 10px;
+    font-size: 4rem;
+}
+
+.headerContainer p {
+    color: white;
+    font-size: 2rem;
+}
+
+button {
+    margin-top: 20px;
+    width: 300px;
+    height: 45px;
+    padding: 8px;
+    font-size: 1.2rem;
+    color: white;
+    background-color: rgb(13, 119, 100);
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: rgb(34, 107, 94);
+}
+
+@media only screen and (max-width: 600px){
+    .home {
+        justify-content: center;
+        align-items: center;
+
+    }
+    .home .headerContainer {
+        margin-left: 0;
+        border-radius: 10px;
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #121619;
+        color: black;
+
+    }
+
+    .home .headerContainer h1{
+        font-size: 40px;
+        height: 30px;
+        margin: 15px 0px;
+        color: rgb(155, 19, 19);
+    }
+
+    .home .headerContainer p {
+        font-size: 30px;
+        color: white;
+        margin: 10px;
+    }
+
+    button {
+        width: 200px;
+        height: 50px;
+        margin-bottom: 20px;
+    }
+}
