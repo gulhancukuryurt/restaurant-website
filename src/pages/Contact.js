@@ -17,7 +17,18 @@ const Contact = () => {
           fontWeight: "bold",
           mb: 2
         },
-        "& p": {textAlign:"center"}
+
+        "& p": {textAlign:"center"},
+        "@media (max-width:600px)": {
+          width: "300px",
+          
+        },
+        "@media (max-width:400px)": {
+         fontSize:"1rem",
+          m: 3
+        }
+       
+
       }}>
         <Typography variant="h4">
           Contact My Restaurant
@@ -34,6 +45,10 @@ const Contact = () => {
         "@media (max-width:600px)": {
           width: "400px",
           m: 5
+        },
+        "@media (max-width:400px)": {
+          width: "300px",
+          m: 2
         }
 
 
@@ -46,7 +61,13 @@ const Contact = () => {
             "@media (max-width:600px)": {
               width: "300px",
               m: 5
+            },
+            "@media (max-width:400px)": {
+              width: "300px",
+              m: 3
             } },
+          
+          
           }}
           noValidate
           autoComplete="off"
@@ -84,7 +105,18 @@ const Contact = () => {
           </Grid>
           
          
-        <TableContainer component={Paper} sx={{marginTop:"60px"}}>
+        <TableContainer component={Paper} 
+        sx={{marginTop:"60px",
+        "@media (max-width:600px)": {
+          width: "300px",
+          m: 5
+        },
+        "@media (max-width:400px)": {
+         fontSize:"1rem",
+          m: 3
+        }
+        
+        }}>
           <Table aria-label="contact table">
             <TableHead>
               <TableRow>
